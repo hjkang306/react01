@@ -15,11 +15,11 @@ function App() {
     <>
       <Header fonts="nexon" />
       <Main>
-        <Slider />
+        <Slider fonts="nexon" />
         <Image attr={["nexon", "section", "container"]} />
         <ImageText attr={["nexon", "section", "gray", "container"]} />
         <Card attr={["nexon", "section", "container"]} />
-        <Banner fonts="nexon" />
+        <Banner fonts="gmark" />
         <Text attr={["nexon", "section", "container"]} />
       </Main>
       <Footer attr={["nexon", "section", "gray", "container"]} />

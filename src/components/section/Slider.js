@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function Slider() {
+function Slider(props) {
   return (
-    <>
+    <section id="sliderType" class={`slider__wrap ${props.fonts}`}>
       <div className="slider__innner">
         <Swiper
           autoplay={{
@@ -72,7 +72,7 @@ function Slider() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </section>
   );
 }
 
