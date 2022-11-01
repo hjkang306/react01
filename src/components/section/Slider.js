@@ -5,6 +5,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const sliderTitleInfo = {
+  subtit: "Journey",
+  tit: "The Blue Sea",
+  desc: "보고 있으면 마음이 편안해지는 수평선과 푸른 물결을 감상해 볼까요?",
+  link1: "/",
+  link2: "/",
+};
+
 function Slider(props) {
   return (
     <section id="sliderType" class={`slider__wrap ${props.fonts}`}>
@@ -21,16 +29,12 @@ function Slider(props) {
         >
           <SwiperSlide>
             <div className="desc">
-              <span>Journey</span>
-              <h3>The Blue Sea</h3>
-              <p>
-                보고 있으면 마음이 편안해지는 수평선과
-                <br />
-                푸른 물결을 감상해 볼까요?
-              </p>
+              <span>{sliderTitleInfo.subtit}</span>
+              <h3>{sliderTitleInfo.tit}</h3>
+              <p>{sliderTitleInfo.desc}</p>
               <div class="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" class="black">
+                <a href={`${sliderTitleInfo.link1}`}>자세히 보기</a>
+                <a href={`${sliderTitleInfo.link2}`} class="black">
                   사이트 보기
                 </a>
               </div>
@@ -38,16 +42,12 @@ function Slider(props) {
           </SwiperSlide>
           <SwiperSlide>
             <div className="desc">
-              <span>Journey</span>
-              <h3>The Blue Sea</h3>
-              <p>
-                보고 있으면 마음이 편안해지는 수평선과
-                <br />
-                푸른 물결을 감상해 볼까요?
-              </p>
+              <span>{sliderTitleInfo.subtit}</span>
+              <h3>{sliderTitleInfo.tit}</h3>
+              <p>{sliderTitleInfo.desc}</p>
               <div class="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" class="black">
+                <a href={`${sliderTitleInfo.link1}`}>자세히 보기</a>
+                <a href={`${sliderTitleInfo.link2}`} class="black">
                   사이트 보기
                 </a>
               </div>
@@ -55,16 +55,12 @@ function Slider(props) {
           </SwiperSlide>
           <SwiperSlide>
             <div className="desc">
-              <span>Journey</span>
-              <h3>The Blue Sea</h3>
-              <p>
-                보고 있으면 마음이 편안해지는 수평선과
-                <br />
-                푸른 물결을 감상해 볼까요?
-              </p>
+              <span>{sliderTitleInfo.subtit}</span>
+              <h3>{sliderTitleInfo.tit}</h3>
+              <p>{sliderTitleInfo.desc}</p>
               <div class="btn">
-                <a href="/">자세히 보기</a>
-                <a href="/" class="black">
+                <a href={`${sliderTitleInfo.link1}`}>자세히 보기</a>
+                <a href={`${sliderTitleInfo.link2}`} class="black">
                   사이트 보기
                 </a>
               </div>
