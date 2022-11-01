@@ -45,7 +45,7 @@ function Image(props) {
           <ImageArticle
             key={info.num}
             img={info.img}
-            tit={info.name}
+            tit={info.tit}
             desc={info.desc}
             link={info.btnLink}
           />
