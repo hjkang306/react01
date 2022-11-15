@@ -16,6 +16,7 @@ const Unsplash = () => {
 
   // unsplash search
   const search = async (query) => {
+    // 서치이미지
     await fetch(
       `https://api.unsplash.com/search/photos?client_id=pwTcmZX1BLEZXpcol69V_Z-fxMzCGK8nvL8kQ1iV8Hk&query=${query}&per_page=30`
     )
@@ -27,6 +28,7 @@ const Unsplash = () => {
 
   // unsplash
   useEffect(() => {
+    // 랜덤이미지(컨텐츠)
     fetch(
       "https://api.unsplash.com/photos/random?client_id=pwTcmZX1BLEZXpcol69V_Z-fxMzCGK8nvL8kQ1iV8Hk&count=30"
     )
@@ -35,6 +37,7 @@ const Unsplash = () => {
       .then((result) => setImages(result))
       .catch((error) => console.log("error", error));
 
+    // 랜덤이미지(슬라이드)
     fetch(
       "https://api.unsplash.com/photos/random?client_id=pwTcmZX1BLEZXpcol69V_Z-fxMzCGK8nvL8kQ1iV8Hk&count=10"
     )
