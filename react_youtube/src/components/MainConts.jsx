@@ -7,10 +7,10 @@ const MainConts = () => {
   const [videos, setVideos] = useState(null)
 
   useEffect(() => {
-    fetchAPI(`search?part=snippet&q=언제나 가을`).then((data) =>
-      console.log(data)
+    fetchAPI(`search?part=snippet&q=${selectCategory}&type=video`).then(
+      (data) => setVideos(data.items)
     )
-  }, [])
+  }, [selectCategory])
 
   return (
     <main id="main">
